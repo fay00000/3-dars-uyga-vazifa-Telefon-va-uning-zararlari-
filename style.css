@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Shriftni belgilash ixtiyoriy */
+}
+
+.content-wrapper {
+    /* Bu div matnni o'rab turadi va joylashuvini boshqaradi */
+    max-width: 800px; /* Kontentning maksimal kengligi */
+    margin-left: 0;  /* Konteynerni chap chetga yopishadi */
+    margin-right: auto; /* Agar max-width ishlatilsa, o'ngda bo'shliq qoldiradi */
+    padding-left: 20px; /* Chap tomondan xohlagan miqdorda bo'shliq ochadi */
+    padding-right: 20px; /* O'ng tomondan ham bo'shliq berish tavsiya etiladi */
+    padding-top: 20px; /* Yuqoridan bo'shliq */
+    padding-bottom: 20px; /* Pastdan bo'shliq */
+    box-sizing: border-box; /* Padding va borderning kenglikka ta'sirini boshqarish */
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: unset;
+    text-align: left; /* Sarlavhani chapga hizalaydi */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    text-align: left; /* Paragrafni chapga hizalaydi */
+    margin-top: 0;
+}
+
+/* Yangi qo'shilgan stillar rasm uchun */
+.image-container {
+    width: 100%; /* Bu rasm konteyneri .content-wrapper ichida 100% kenglikni egallaydi */
+    text-align: center; /* Agar rasm kichikroq bo'lsa, uni markazga hizalaydi */
+    margin-top: 30px; /* Rasmdan yuqorida bo'shliq */
+    margin-bottom: 30px; /* Rasmdan pastda bo'shliq */
+    /* Padding-left/right kerak emas, chunki content-wrapper allaqachon buni ta'minlaydi */
+}
+
+.image-container img {
+    max-width: 100%; /* Rasm o'zining konteyneridan chiqib ketmasligi uchun */
+    height: auto; /* Balandlikni proporsional ravishda o'lchamlaydi */
+    display: block; /* Ba'zi brauzer muammolarini hal qilish uchun */
+    margin: 0 auto; /* Rasmni image-container ichida markazga hizalaydi */
+}
